@@ -1,0 +1,23 @@
+# API and Web Framework
+fastapi>=0.103.1
+uvicorn[standard]>=0.23.2
+pydantic>=2.4.2
+
+# Database
+motor>=3.3.1
+pymongo>=4.5.0  # Already includes bson package
+
+# AI Integration
+mistralai>=0.0.9
+
+# Configuration and Environment
+python-dotenv>=1.0.0
+
+# Web UI
+streamlit>=1.28.0
+
+# Development and Testing Dependencies
+pytest>=7.4.2
+pytest-asyncio>=0.21.1
+httpx>=0.25.0   # For API testing
+pytest-cov>=4.1.0  # Added for coverage reporting
