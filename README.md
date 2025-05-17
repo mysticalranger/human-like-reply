@@ -24,7 +24,7 @@ The application follows a modular architecture:
 - **UI Layer**: An interactive demo built with Streamlit, allowing users to test the reply generation.
 - **Metrics Module**: Collects and exposes operational metrics.
 
-*Placeholder for an architecture diagram if you wish to create one:*
+*architecture diagram:*
 
 ```text
 [MongoDB] <--> [API Service (FastAPI + AI Module + Cache)] <--> [Streamlit UI]
@@ -367,10 +367,6 @@ The `--build` flag ensures the image is up-to-date, and `--exit-code-from tests`
     - Alternatively, adjust your VS Code Python interpreter path or `python.analysis.extraPaths` in `settings.json` if needed, though the `sys.path.insert` in `conftest.py` usually handles this for runtime.
 - **Rate Limits (429 Errors) from Mistral API**:
   - The `scripts/import_posts.py` and `app/demo.py` include retry logic with exponential backoff for 429 errors. If these persist, you might be exceeding your API plan's limits. Consider adding longer delays or processing fewer items in batch.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details (assuming you have one, if not, you can add a standard MIT License file).
 
 ## Acknowledgements
 
